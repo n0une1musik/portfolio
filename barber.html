@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Барбершоп «Бритва»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--steel:#e4e8ec;--ink:#1c2430;--red:#c8202f;--blue:#1f4e8c}
+*{box-sizing:border-box;margin:0}
+body{font:400 17px/1.6 Inter,system-ui,sans-serif;background:var(--steel);color:var(--ink);padding-left:22px}
+.pole{position:fixed;left:0;top:0;bottom:0;width:22px;background:repeating-linear-gradient(135deg,var(--red) 0 14px,#fff 14px 28px,var(--blue) 28px 42px,#fff 42px 56px)}
+.wrap{max-width:820px;margin:0 auto;padding:0 24px}
+.hero{padding:80px 0 56px}
+h1{font:700 clamp(52px,14vw,120px)/.95 Oswald,sans-serif;text-transform:uppercase}
+.hero p{max-width:36ch;margin-top:20px;font-size:20px}
+.btn{display:inline-block;margin-top:28px;padding:14px 28px;background:var(--red);color:#fff;font-weight:600;text-decoration:none}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+section{padding:48px 0;border-top:3px solid var(--ink)}
+h2{font:700 32px/1.2 Oswald,sans-serif;text-transform:uppercase;margin-bottom:20px}
+table{width:100%;border-collapse:collapse}
+td{padding:14px 0;border-bottom:1px solid #b8c0c9}
+td:last-child{text-align:right;font-weight:600;white-space:nowrap}
+.two{display:grid;gap:24px;grid-template-columns:1fr 1fr}
+footer{padding:28px 24px;text-align:center;font-size:14px;opacity:.7}
+@media(max-width:640px){.two{grid-template-columns:1fr}}
+</style></head><body>
+<div class="pole" aria-hidden="true"></div>
+<header class="hero"><div class="wrap">
+<h1>Бритва</h1>
+<p>Мужские стрижки и уход за бородой. Без очередей: записывайтесь заранее.</p>
+<a class="btn" href="https://t.me/gnomirrasta">Записаться</a>
+</div></header>
+<section><div class="wrap">
+<h2>Прайс</h2>
+<table>
+<tr><td>Мужская стрижка</td><td>400 ₴</td></tr>
+<tr><td>Стрижка машинкой</td><td>300 ₴</td></tr>
+<tr><td>Оформление бороды</td><td>250 ₴</td></tr>
+<tr><td>Королевское бритьё</td><td>350 ₴</td></tr>
+<tr><td>Стрижка + борода</td><td>600 ₴</td></tr>
+</table>
+</div></section>
+<section><div class="wrap two">
+<div><h2>Время</h2><p>Вт–Сб: 10:00–20:00<br>Вс: 11:00–17:00<br>Пн: выходной</p></div>
+<div><h2>Контакты</h2><p>пр. Центральный, 30<br>Николаев<br><a href="https://t.me/gnomirrasta">Telegram</a></p></div>
+</div></section>
+<footer>Демо-сайт для портфолио. Барбершоп вымышленный.</footer>
+</body></html>
