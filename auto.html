@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Автосервис «Гараж 24»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#0f3d5e;--orange:#ff7a1a;--grey:#f1f3f5;--line:#cfd6dc}
+*{box-sizing:border-box;margin:0}
+body{font:400 17px/1.6 Roboto,system-ui,sans-serif;background:#fff;color:#16222d}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px}
+.hero{background:var(--blue);color:#fff;padding:64px 0 56px}
+h1{font:400 clamp(40px,9vw,80px)/1.02 "Russo One",sans-serif}
+.hero p{max-width:38ch;margin-top:18px;font-size:19px}
+.badge{display:inline-block;margin-top:26px;padding:10px 18px;background:var(--orange);color:#16222d;font-weight:500;border-radius:6px}
+.btn{display:inline-block;margin:26px 0 0 12px;padding:10px 18px;border:2px solid #fff;color:#fff;text-decoration:none;font-weight:500;border-radius:6px}
+.btn:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+section{padding:52px 0}
+h2{font:400 28px/1.2 "Russo One",sans-serif;margin-bottom:22px;color:var(--blue)}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-weight:500;color:#51606d;border-bottom:2px solid var(--blue);padding:8px 0}
+td{padding:14px 0;border-bottom:1px solid var(--line)}
+td:not(:first-child),th:not(:first-child){text-align:right;white-space:nowrap;padding-left:16px}
+.grey{background:var(--grey)}
+.cols{display:grid;gap:28px;grid-template-columns:1fr 1fr}
+@media(max-width:640px){.cols{grid-template-columns:1fr}.btn{margin-left:0}}
+footer{padding:28px 24px;text-align:center;font-size:14px;opacity:.7}
+</style></head><body>
+<header class="hero"><div class="wrap">
+<h1>Гараж 24: чиним честно</h1>
+<p>Ремонт легковых авто. Сначала называем цену, потом работаем. Без «сюрпризов» в чеке.</p>
+<span class="badge">Диагностика бесплатно при ремонте</span><a class="btn" href="https://t.me/gnomirrasta">Записаться</a>
+</div></header>
+<section><div class="wrap">
+<h2>Работы и цены</h2>
+<table>
+<tr><th>Услуга</th><th>Время</th><th>Цена</th></tr>
+<tr><td>Замена масла и фильтра</td><td>40 мин</td><td>от 250 ₴</td></tr>
+<tr><td>Замена тормозных колодок</td><td>1,5 ч</td><td>от 500 ₴</td></tr>
+<tr><td>Компьютерная диагностика</td><td>1 ч</td><td>300 ₴</td></tr>
+<tr><td>Шиномонтаж (4 колеса)</td><td>1 ч</td><td>600 ₴</td></tr>
+<tr><td>Развал-схождение</td><td>1 ч</td><td>700 ₴</td></tr>
+</table>
+<p style="margin-top:14px;font-size:14px;opacity:.7">Стоимость работ без запчастей. Точную цену называем после осмотра.</p>
+</div></section>
+<section class="grey"><div class="wrap cols">
+<div><h2>Как это работает</h2><p>Вы пишете в Telegram, мы подбираем время. После осмотра согласуем список работ и цену. Забираете авто и получаете гарантию на работу.</p></div>
+<div><h2>Контакты</h2><p>ул. Промышленная, 8, Николаев<br>Пн–Сб: 9:00–19:00<br><a href="https://t.me/gnomirrasta">Написать в Telegram</a></p></div>
+</div></section>
+<footer>Демо-сайт для портфолио. Автосервис вымышленный.</footer>
+</body></html>
